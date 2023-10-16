@@ -1,0 +1,165 @@
+<!--
+Michael Voecks
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Safe Intersection RFP</title>
+	<style type="text/css">
+		body{
+			background-color:#d0e4fe;
+		}
+		table{
+			text-align:center;
+			width:100%;
+			border-collapse:collapse;
+			empty-cells:hide;
+		}
+		tr{
+			text-align:center;
+		}
+		td{
+			text-align:center;
+			background-color:#d0e4fe;
+		}
+		div.center{
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+<h1 align="center">Safe Intersection Calculations</h1>
+<br>
+<p> Directions: </br> 
+Enter all fields required for your scenario ONLY. If not needed for your scenario or not done, leave it blank. Don't enter units. ***Currently only works for scenarios 3-5***</p>
+<form method="GET" action = "SafeIntersection.php">
+	<div class="center"> Your Scenario: <input type ="text" name="scen"></input></div>
+	<br>
+	<table border="1">
+		<!--Column 1-->
+		<tr>
+			<td>Scenario</td>
+			<td>Vehicle</td>
+			<td>Conditions</td>
+			<td>Initial speed (mph)</td>
+			<td>Deceleration (ft/s<sup>2</sup>)</td>
+			<td>Stopping time* (s)</td>
+			<td>Stopping Distance* (ft)</td>
+		</tr>
+		
+		<!--Column 2-->
+		<tr>
+			<td>1-5</td>
+			<td>Customer's Car:</td>
+			<td>Dry</td>
+			<td><input type="text" name ="v1"></input></td>
+			<td><input type="text" name ="a1"></input></td>
+			<td><input type="text" name ="t1"></input></td>
+			<td><input type="text" name ="d1"></input></td>
+		</tr>
+		
+		<!--Column 3-->
+		<tr>
+			<td>2-5</td>
+			<td>Sporty car:</td>
+			<td>Dry</td>
+			<td><input type="text" name ="v2"></input></td>
+			<td><input type="text" name ="a2"></input></td>
+			<td><input type="text" name ="t2"></input></td>
+			<td><input type="text" name ="d2"></input></td>
+		</tr>
+		
+		<!--Column 4-->
+		<tr>
+			<td>2-5</td>
+			<td>18 wheeler</td>
+			<td>Dry</td>
+			<td><input type="text" name ="v3"></input></td>
+			<td><input type="text" name ="a3"></input></td>
+			<td><input type="text" name ="t3"></input></td>
+			<td><input type="text" name ="d3"></input></td>
+		</tr>
+		
+		<!--Column 5-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>Customer's Car:</td>
+			<td>Wet</td>
+			<td><input type="text" name ="v4"></input></td>
+			<td><input type="text" name ="a4"></input></td>
+			<td><input type="text" name ="t4"></input></td>
+			<td><input type="text" name ="d4"></input></td>
+		</tr>
+		
+		<!--Column 6-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>Sporty car:</td>
+			<td>Wet</td>
+			<td><input type="text" name ="v5"></input></td>
+			<td><input type="text" name ="a5"></input></td>
+			<td><input type="text" name ="t5"></input></td>
+			<td><input type="text" name ="d5"></input></td>
+		</tr>
+		
+		<!--Column 7-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>18 wheeler:</td>
+			<td>Wet</td>
+			<td><input type="text" name ="v6"></input></td>
+			<td><input type="text" name ="a6"></input></td>
+			<td><input type="text" name ="t6"></input></td>
+			<td><input type="text" name ="d6"></input></td>
+		</tr>
+		
+		<!--Column 8-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>Customer's car:</td>
+			<td>Icy</td>
+			<td><input type="text" name ="v7"></input></td>
+			<td><input type="text" name ="a7"></input></td>
+			<td><input type="text" name ="t7"></input></td>
+			<td><input type="text" name ="d7"></input></td>
+		</tr>
+		
+		<!--Column 9-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>Sporty car:</td>
+			<td>Icy</td>
+			<td><input type="text" name ="v8"></input></td>
+			<td><input type="text" name ="a8"></input></td>
+			<td><input type="text" name ="t8"></input></td>
+			<td><input type="text" name ="d8"></input></td>
+		</tr>
+		
+		<!--Column 10-->
+		<tr>
+			<td>3, 4 & 5</td>
+			<td>18 wheeler:</td>
+			<td>Icy</td>
+			<td><input type="text" name ="v9"></input></td>
+			<td><input type="text" name ="a9"></input></td>
+			<td><input type="text" name ="t9"></input></td>
+			<td><input type="text" name ="d9"></input></td>
+		</tr>
+	</table>
+	<div>* Stopping time and distance include the 1s reaction time for Scenario 4 & 5</div>
+	<br>
+	<div>
+		First Name:<input type = "text" name = "fname" value = ""></input>
+		<br>
+		Last Name:<input type = "text" name = "lname" value = ""></input>
+		<br>
+		Period:<input type = "text" name = "period" value = ""></input>
+		<br>
+		<br>
+		<input type = "submit" name="Submit"></input>
+	</div>
+</form>
+<p> Created by: Christopher Chen 9/9/2014 </p>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!--
+Michael Voecks 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Barrel Jump Lab</title>
+	<style type="text/css">
+		body{
+			background-color:#d0e4fe;
+		}
+		table{
+			text-align:center;
+			width:100%;
+			font-size:medium;
+			border-collapse:collapse;
+			empty-cells:hide;
+		}
+		tr{
+			height:60px;
+			width:100px;
+			text-align:center;
+		}
+		td{
+			width:100px;
+			text-align:center;
+			background-color:#d0e4fe;
+		}
+		div.center{
+			text-align:center;
+		}
+		input{
+			width:100px;
+		}
+		div.right{
+			text-align:right;
+		}
+		div.credit{
+			text-align:right;
+			font-size:9pt;
+		}
+	</style>
+</head>
+<body>
+<h1 align="center">Barrel Jump Lab Calculations</h1>
+<div style="font-size:14pt">There is a +/-10% tolerance for correct answers
+<br>
+If you didn't take data for a box just enter 0.</div>
+<form method="POST" action = "BarrelJumpTable.php">
+	<table border="1">
+		<tr>
+			<td>Scenario #</td>
+			<td><u>Copied</u><br>Object Mass [kg]</td>
+			<td><u>Copied</u><br>Starting Height on Ramp (h) [m]</td>
+			<td><u>Copied</u><br>Starting Distance (d) [m]</td>
+			<td><u>Average Measured</u><br>Distance from Table (x) [m]</td>
+			<td><u>Calculated</u><br>Potential Energy at Top of Ramp [J] (1 point)</td>
+			<td><u>Calculated</u><br>Kinetic Energy at Bottom of Ramp [J] (1 point)</td>
+			<td><u>Calculated</u><br>Initial Horizontal Velocity at Edge of Table [m/s] (1 point)</td>
+			<td><u>Calculated</u><br>Distance From Table (x) [m] (2 points)</td>
+			<td>% Error (1 point)</td>
+		</tr>
+						
+				<!--Column 1-->
+		<tr>
+			<td><input type = "text" name = "Snum1" value=""></input></td>
+			<td><input type = "text" name = "1a" value=""></input></td>
+			<td><input type = "text" name = "1b" value=""></input></td>
+			<td><input type = "text" name = "1c" value=""></input></td>
+			<td><input type = "text" name = "1d" value=""></input></td>
+			<td><input type = "text" name = "1e" value=""></input></td>
+			<td><input type = "text" name = "1f" value=""></input></td>
+			<td><input type = "text" name = "1g" value=""></input></td>
+			<td><input type = "text" name = "1h" value=""></input></td>
+			<td><input type = "text" name = "1i" value=""></input></td>
+		</tr>
+		
+				<!--Column 2-->
+		<tr>
+			<td><input type = "text" name = "Snum2" value=""></input></td>
+			<td><input type = "text" name = "2a" value=""></input></td>
+			<td><input type = "text" name = "2b" value=""></input></td>
+			<td><input type = "text" name = "2c" value=""></input></td>
+			<td><input type = "text" name = "2d" value=""></input></td>
+			<td><input type = "text" name = "2e" value=""></input></td>
+			<td><input type = "text" name = "2f" value=""></input></td>
+			<td><input type = "text" name = "2g" value=""></input></td>
+			<td><input type = "text" name = "2h" value=""></input></td>
+			<td><input type = "text" name = "2i" value=""></input></td>
+		</tr>
+		
+				<!--Column 3-->
+		<tr>
+			<td><input type = "text" name = "Snum3" value=""></input></td>
+			<td><input type = "text" name = "3a" value=""></input></td>
+			<td><input type = "text" name = "3b" value=""></input></td>
+			<td><input type = "text" name = "3c" value=""></input></td>
+			<td><input type = "text" name = "3d" value=""></input></td>
+			<td><input type = "text" name = "3e" value=""></input></td>
+			<td><input type = "text" name = "3f" value=""></input></td>
+			<td><input type = "text" name = "3g" value=""></input></td>
+			<td><input type = "text" name = "3h" value=""></input></td>
+			<td><input type = "text" name = "3i" value=""></input></td>
+		</tr>
+		
+				<!--Column 4-->
+		<tr>
+			<td><input type = "text" name = "Snum4" value=""></input></td>
+			<td><input type = "text" name = "4a" value=""></input></td>
+			<td><input type = "text" name = "4b" value=""></input></td>
+			<td><input type = "text" name = "4c" value=""></input></td>
+			<td><input type = "text" name = "4d" value=""></input></td>
+			<td><input type = "text" name = "4e" value=""></input></td>
+			<td><input type = "text" name = "4f" value=""></input></td>
+			<td><input type = "text" name = "4g" value=""></input></td>
+			<td><input type = "text" name = "4h" value=""></input></td>
+			<td><input type = "text" name = "4i" value=""></input></td>
+		</tr>
+		
+				<!--Column 5-->
+		<tr>
+			<td><input type = "text" name = "Snum5" value=""></input></td>
+			<td><input type = "text" name = "5a" value=""></input></td>
+			<td><input type = "text" name = "5b" value=""></input></td>
+			<td><input type = "text" name = "5c" value=""></input></td>
+			<td><input type = "text" name = "5d" value=""></input></td>
+			<td><input type = "text" name = "5e" value=""></input></td>
+			<td><input type = "text" name = "5f" value=""></input></td>
+			<td><input type = "text" name = "5g" value=""></input></td>
+			<td><input type = "text" name = "5h" value=""></input></td>
+			<td><input type = "text" name = "5i" value=""></input></td>
+		</tr>
+		
+	</table>
+	<br>
+	<div>
+		First Name: <input type = "text" name = "fname" value = ""></input>
+		<br>
+		Last Name: <input type = "text" name = "lname" value = ""></input>
+		<br>
+		Period: <input type = "text" name = "period" value = ""></input>
+		<br>
+		<br>
+		<input type = "submit" value="Submit"></input>
+	</div>
+	<br>
+	<div class="credit">
+	Michael Voecks
+	<br>
+	Version 1.1
+	<br>
+	6/30/14
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<h1 align="center">Physics Planet Lab Calculations</h1>
+<hr>
+<style type="text/css">
+body{
+background-color:#d0e4fe;
+}
+table{
+width:100%;
+border
+}
+td{
+text-align:center;
+background-color:#d0e4fe;
+}
+.fixed{
+background-color:#696969;
+}
+.correct{
+background-color:#00FF00;
+}
+.incorrect{
+background-color:#B22222;
+}
+p#right{
+font-size:small;
+text-align:right;
+}
+</style>
+</head>
+
+<body>
+
+<form method="get" action="Answer.php">
+	<table border="1">
+		<tr>
+		  <td>Scenario</td>
+		  <td>Planet mass, m<sub>p</sub> [# of<br>times Earth's mass]</td>
+		  <td>Planet radius, r<sub>p</sub> [# of<br>times Earth's radius]</td>
+		  <td>Emissivity, &#949</td>
+		  <td>Absorbed Power,<br>P<sub>abs</sub> [#of times Earth's absorbed power]</td>
+		  <td>Orbit Radius, a [AU]</td>
+		  <td>Kepler's constant, K [yr<sup>2</sup>/AU<sup>3</sup>]</td>
+		  <td>Orbital Period, T<sub>orbit</sub> [Earth years]</td>
+		  <td>Surface Gravity, g [m/s<sup>2</sup>]</td>
+		  <td>Surface Temperature, T<sub>surface</sub> [F] without greenhouse gases</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><input type="text" name="1a" value=""></td>
+			<td><input type="text" name="1b" value=""></td>
+			<td class="fixed">0.70</td>
+			<td class="fixed">1</td>
+			<td class="fixed">1</td>
+			<td class="fixed">1</td>
+			<td>Goal:<input size="15" type="text" name="1h" value=""><br>Actual:<input size="15" type="text" name="1i" value=""></td>
+			<td>Goal:<input size="13" type="text" name="1j" value=""><br>Actual:<input size="13" type="text" name="1k" value=""></td>
+			<td>Goal:<br><input size="27" type="text" name="1m" value=""><br>Actual:<br><input size="27" type="text" name="1n" value=""></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><input type="text" name="2a" value=""></td>
+			<td><input type="text" name="2b" value=""></td>
+			<td><input size="8" type="text" name="2c" value=""></td>
+			<td class="fixed">1</td>
+			<td class="fixed">1</td>
+			<td class="fixed">1</td>
+			<td>Goal:<input size="15" type="text" name="2h" value=""><br>Actual:<input size="15" type="text" name="2i" value=""></td>
+			<td>Goal:<input size="13" type="text" name="2j" value=""><br>Actual:<input size="13" type="text" name="2k" value=""></td>
+			<td>Goal:<br><input size="27" type="text" name="2m" value=""><br>Actual:<br><input size="27" type="text" name="2n" value=""></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><input type="text" name="3a" value=""></td>
+			<td><input type="text" name="3b" value=""></td>
+			<td><input size="8" type="text" name="3c" value=""></td>
+			<td><input type="text" name="3d" value=""></td>
+			<td><input size="10" type="text" name="3e" value=""></td>
+			<td class="fixed">1</td>
+			<td>Goal:<input size="15" type="text" name="3h" value=""><br>Actual:<input size="15" type="text" name="3i" value=""></td>
+			<td>Goal:<input size="13" type="text" name="3j" value=""><br>Actual:<input size="13" type="text" name="3k" value=""></td>
+			<td>Goal:<br><input size="27" type="text" name="3m" value=""><br>Actual:<br><input size="27" type="text" name="3n" value=""></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><input type="text" name="4a" value=""></td>
+			<td><input type="text" name="4b" value=""></td>
+			<td><input size="8" type="text" name="4c" value=""></td>
+			<td><input type="text" name="4d" value=""></td>
+			<td><input size="10" type="text" name="4e" value=""></td>
+			<td>M<sub>star</sub> [# solar masses]<br><input size="14" type="text" name="4f" value=""><br>K<br><input size="14" type="text" name="4g" value=""></td>
+			<td>Goal:<input size="15" type="text" name="4h" value=""><br>Actual:<input size="15" type="text" name="4i" value=""></td>
+			<td>Goal:<input size="13" type="text" name="4j" value=""><br>Actual:<input size="13" type="text" name="4k" value=""></td>
+			<td>Goal:<br><input size="27" type="text" name="4m" value=""><br>Actual:<br><input size="27" type="text" name="4n" value=""></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><input type="text" name="5a" value=""></td>
+			<td><input type="text" name="5b" value=""></td>	
+			<td><input size="8" type="text" name="5c" value=""></td>
+			<td><input type="text" name="5d" value=""></td>
+			<td><input size="10" type="text" name="5e" value=""></td>
+			<td>Star Name:<br><input size="14" type="text" name="starName" value="">M<sub>star</sub> [# solar masses]<br><input size="14" type="text" name="5f" value=""><br>K<br><input size="14" type="text" name="5g" value=""></td>
+			<td>Goal:<input size="15" type="text" name="5h"><br>Actual:<input size="15" type="text" name="5i" value=""></td>
+			<td>Goal:<input size="13" type="text" name="5j"><br>Actual:<input size="13" type="text" name="5k" value=""></td>
+			<td>Goal:<br><input size="27" type="text" name="5m"><br>Actual:<br><input size="27" type="text" name="5n" value=""></td>
+		</tr>
+	</table>
+<p>
+First Name:<input type="text" name="studentFirstName"><br>
+Last Name:<input type="text" name="studentLastName"><br>
+Period:<input type="text" name="period">
+</p>
+<input name="submit" type="submit" value="Submit">
+</form>
+
+<p id="right">Created by: Steven Madachy</p>
+
+</body>
+
+</html>
+
+
+

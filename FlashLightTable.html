@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<h1 align="center">2021 Flash Light Circuit Calculations</h1>
+<hr>
+<style type="text/css">
+body{
+	background-color:#d0e4fe;
+	}
+table{
+	width:100%;
+	}
+td{
+	text-align:center;
+	background-color:#d0e4fe;
+	}
+.fixed{
+	background-color:#696969;
+	}
+.correct{
+	background-color:#00FF00;
+	}
+.incorrect{
+	background-color:#B22222;
+	}
+p#right{
+	font-size:small;
+	text-align:right;
+	}
+</style>
+</head>
+
+<body>
+
+<form method="get" action="FlashLightData.php">
+	<table border="1">
+		<tr>
+			<td></td>
+			<td>Resistance [&#937;]</td>
+			<td>Current [Amps]</td>
+			<td>Voltage [Volts]</td>
+			<td>Power [Watts]</td>
+		</tr>
+		<tr>
+			<td>Scenario (for Scenario 4, only record the values for the 2-bulb position)</td>
+			<td><input type="text" size="" name="scenario" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Battery, when bulb is lit (max current for scenario 5)</td>
+			<td class="fixed"></td>
+			<td><input type="text" size="" name="1b" value=""></td>
+			<td><input type="text" size="" name="1c" value=""></td>
+			<td><input type="text" size="" name="1d" value=""></td>
+		</tr>
+		<tr>
+			<td>Bulb 1</td>
+			<td class="fixed">10 &#937;</td>
+			<td><input type="text" size="" name="2b" value=""></td>
+			<td><input type="text" size="" name="2c" value=""></td>
+			<td><input type="text" size="" name="2d" value=""></td>
+		</tr>
+		<tr>
+			<td>Bulb 2 (Scenario 4)</td>
+			<td class="fixed">10 &#937;</td>
+			<td><input type="text" size="" name="3b" value=""></td>
+			<td><input type="text" size="" name="3c" value=""></td>
+			<td><input type="text" size="" name="3d" value=""></td>
+		</tr>
+		<tr>
+			<td>Bulb 3 (Scenario 4)</td>
+			<td class="fixed">10 &#937;</td>
+			<td><input type="text" size="" name="4b" value=""></td>
+			<td><input type="text" size="" name="4c" value=""></td>
+			<td><input type="text" size="" name="4d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>eq</sub>=Equivalent Resistance of all resistors (not including bulb)</td>
+			<td><input type="text" size="" name="5a" value=""></td>
+			<td><input type="text" size="" name="5b" value=""></td>
+			<td><input type="text" size="" name="5c" value=""></td>
+			<td><input type="text" size="" name="5d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>1</sub></td>
+			<td><input type="text" size="" name="6a" value=""></td>
+			<td><input type="text" size="" name="6b" value=""></td>
+			<td><input type="text" size="" name="6c" value=""></td>
+			<td><input type="text" size="" name="6d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>2</sub></td>
+			<td><input type="text" size="" name="7a" value=""></td>
+			<td><input type="text" size="" name="7b" value=""></td>
+			<td><input type="text" size="" name="7c" value=""></td>
+			<td><input type="text" size="" name="7d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>3</sub></td>
+			<td><input type="text" size="" name="8a" value=""></td>
+			<td><input type="text" size="" name="8b" value=""></td>
+			<td><input type="text" size="" name="8c" value=""></td>
+			<td><input type="text" size="" name="8d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>4</sub></td>
+			<td><input type="text" size="" name="9a" value=""></td>
+			<td><input type="text" size="" name="9b" value=""></td>
+			<td><input type="text" size="" name="9c" value=""></td>
+			<td><input type="text" size="" name="9d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>5</sub></td>
+			<td><input type="text" size="" name="10a" value=""></td>
+			<td><input type="text" size="" name="10b" value=""></td>
+			<td><input type="text" size="" name="10c" value=""></td>
+			<td><input type="text" size="" name="10d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>6</sub></td>
+			<td><input type="text" size="" name="11a" value=""></td>
+			<td><input type="text" size="" name="11b" value=""></td>
+			<td><input type="text" size="" name="11c" value=""></td>
+			<td><input type="text" size="" name="11d" value=""></td>
+		</tr>
+		<tr>
+			<td>R<sub>7</sub></td>
+			<td><input type="text" size="" name="12a" value=""></td>
+			<td><input type="text" size="" name="12b" value=""></td>
+			<td><input type="text" size="" name="12c" value=""></td>
+			<td><input type="text" size="" name="12d" value=""></td>
+		</tr>
+		<tr>
+			<td>Capacitor [Farads] (Scenario 5)</td>
+			<td><input type="text" size="" name="13a" value=""></td>
+			<td><input type="text" size="" name="13b" value=""></td>
+			<td><input type="text" size="" name="13c" value=""></td>
+			<td><input type="text" size="" name="13d" value=""></td>
+		</tr>
+		<tr>
+			<td>LED (Scenario 5)</td>
+			<td class="fixed"></td>
+			<td><input type="text" size="" name="14b" value=""></td>
+			<td><input type="text" size="" name="14c" value=""></td>
+			<td><input type="text" size="" name="14d" value=""></td>
+		</tr>
+		<tr>
+			<td>Time to reach 10 mA [s] (Scenario 5)</td>
+			<td><input type="text" size="" name="15a" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Other (optional)</td>
+			<td><input type="text" size="" name="16a" value=""></td>
+			<td><input type="text" size="" name="16b" value=""></td>
+			<td><input type="text" size="" name="16c" value=""></td>
+			<td><input type="text" size="" name="16d" value=""></td>
+		</tr>
+		<tr>
+			<td>Other (optional)</td>
+			<td><input type="text" size="" name="17a" value=""></td>
+			<td><input type="text" size="" name="17b" value=""></td>
+			<td><input type="text" size="" name="17c" value=""></td>
+			<td><input type="text" size="" name="17d" value=""></td>
+		</tr>
+		<tr>
+			<td>Other (optional)</td>
+			<td><input type="text" size="" name="18a" value=""></td>
+			<td><input type="text" size="" name="18b" value=""></td>
+			<td><input type="text" size="" name="18c" value=""></td>
+			<td><input type="text" size="" name="18d" value=""></td>
+		</tr>
+	</table>
+<p>
+
+First Name:<input type="text" name="studentFirstName"><br>
+Last Name:<input type="text" name="studentLastName"><br>
+Period:<input type="text" name="period">
+</p>
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<p id="right">Created by: Steven Madachy</p>
+<p id="right">Version 1.4 Last Updated 3/14/2019 AKH</p>
+
+
+</body>
+
+</html>

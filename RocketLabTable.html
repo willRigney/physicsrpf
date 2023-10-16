@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<h1 align="center">Rocket Lab Calculations</h1>
+<hr>
+<style type="text/css">
+body{
+	background-color:#d0e4fe;
+	}
+table{
+	width:100%;
+	}
+td{
+	text-align:center;
+	background-color:#d0e4fe;
+	}
+.fixed{
+	background-color:#696969;
+	}
+.correct{
+	background-color:#00FF00;
+	}
+.incorrect{
+	background-color:#B22222;
+	}
+p#right{
+	font-size:small;
+	text-align:right;
+	}
+</style>
+</head>
+
+<body>
+<p>
+<h3 style = "font-weight:bold">
+	Directions:
+</h3>
+Enter your measured and calculated values for the Rocket Lab. </br>
+For uncalculated/unmeasured data, enter 0. </br>
+Do not enter measurements for angle 90. </br>
+Make sure to fill out all fields appropriately. </br>
+Do not enter units or scientific notation </br>
+</h3>
+<!-- credit: old source used as base point -->
+<form method="get" action="RocketLab.php">
+	<table border="1">
+		<tr>
+			<th> Angle (&deg;)</th>
+			<th> Measured Average Time (s)</th>
+			<th> Measured Average Range (m)</th>
+			<th> Calculated Horizontal Velocity (m/s) 1 point </th>
+			<th>Calculated Vertical Velocity (m/s) 1 point </th>
+			<th> Calculated Total Velocity (m/s) 1 point </th>
+			<th> Calculated Height (m) 1 point </th>
+		</tr>
+		<tr>
+			<td><input type="text" size="" name="a1" value=""></td>
+			<td><input type="text" size="" name="t1" value=""></td>
+			<td><input type="text" size="" name="r1" value=""></td>
+			<td><input type="text" size="" name="hor1" value=""></td>
+			<td><input type="text" size="" name="ver1" value=""></td>
+			<td><input type="text" size="" name="vel1" value=""></td>
+			<td><input type="text" size="" name="h1" value=""></td>
+		
+			
+		</tr>
+
+		<tr>
+				<td><input type="text" size="" name="a2" value=""></td>
+			<td><input type="text" size="" name="t2" value=""></td>
+			<td><input type="text" size="" name="r2" value=""></td>
+			<td><input type="text" size="" name="hor2" value=""></td>
+			<td><input type="text" size="" name="ver2" value=""></td>
+			<td><input type="text" size="" name="vel2" value=""></td>
+			<td><input type="text" size="" name="h2" value=""></td>
+	
+		</tr>
+		<tr>
+				<td><input type="text" size="" name="a3" value=""></td>
+			<td><input type="text" size="" name="t3" value=""></td>
+			<td><input type="text" size="" name="r3" value=""></td>
+			<td><input type="text" size="" name="hor3" value=""></td>
+			<td><input type="text" size="" name="ver3" value=""></td>
+			<td><input type="text" size="" name="vel3" value=""></td>
+			<td><input type="text" size="" name="h3" value=""></td>
+	
+		</tr>
+		<tr>
+				<td><input type="text" size="" name="a4" value=""></td>
+			<td><input type="text" size="" name="t4" value=""></td>
+			<td><input type="text" size="" name="r4" value=""></td>
+			<td><input type="text" size="" name="hor4" value=""></td>
+			<td><input type="text" size="" name="ver4" value=""></td>
+			<td><input type="text" size="" name="vel4" value=""></td>
+			<td><input type="text" size="" name="h4" value=""></td>
+
+		</tr>
+	
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> Avg. Total Velocity (m/s) </td>
+			<td><input type="text" size="" name="avg1" value=""></td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> Avg. Total Velocity (mph) </td>
+			<td><input type="text" size="" name="avg2" value=""></td>
+		</tr>
+			
+	
+	</table>
+<p>
+
+First Name:<input type="text" name="studentFirstName"><br>
+Last Name:<input type="text" name="studentLastName"><br>
+Period:<input type="text" name="period">
+</p>
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<p id="right">Created by: Christopher Chen</p>
+<p id="right">Version 1 Last Updated 6-25-14</p>
+
+
+</body>
+
+</html>

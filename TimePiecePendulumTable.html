@@ -1,0 +1,169 @@
+<!--
+Created by Steven Madachy
+Made for: Mr. Hankla
+Assisted by: Mr. Hettmansperger
+
+for more information about how to write HTML go to http://www.w3schools.com/
+for more information about how to write PHP go to http://php.net/
+-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<h1 align="center">Time Piece Lab Calculations</h1>
+<hr>
+<style type="text/css">
+body{
+	background-color:#d0e4fe;
+	}
+table{
+	width:100%;
+	}
+td{
+	text-align:center;
+	background-color:#d0e4fe;
+	}
+.fixed{
+	background-color:#696969;
+	}
+.correct{
+	background-color:#00FF00;
+	}
+.incorrect{
+	background-color:#B22222;
+	}
+p#right{
+	font-size:small;
+	text-align:right;
+	}
+</style>
+</head>
+
+<body>
+
+<form method="get" action="TimePiecePendulumData.php">
+	<table border="1">
+		<tr>
+			<td></td>
+			<td></td>
+			<td>Customer's Choice of Period</td>
+			<td>1.0 Second Period</td>
+			<td>1.0 Second Period</td>
+			<td>1.0 Second Period</td>
+		</tr>
+		<tr>
+			<td>Item</td>
+			<td>Units</td>
+			<td></td>
+			<td>Right Side Up</td>
+			<td>Upside Down</td>
+			<td>Moon</td>
+		</tr>
+		<tr>
+			<td>Scenario</td>
+			<td>-</td>
+			<td><input type="text" size="" name="scenario" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Period-Given</td>
+			<td>s</td>
+			<td><input type="text" size="" name="1a" value=""></td>
+			<td class="fixed">1.0</td>
+			<td class="fixed"	></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Length-Calculated</td>
+			<td>m</td>
+			<td><input type="text" size="" name="2a" value=""></td>
+			<td><input type="text" size="" name="2b" value=""></td>
+			<td class="fixed"></td>
+			<td><input type="text" size="" name="2d" value=""></td>
+		</tr>
+		<tr>
+			<td>Frequency-Calculated</td>
+			<td>Hz</td>
+			<td><input type="text" size="" name="3a" value=""></td>
+			<td><input type="text" size="" name="3b" value=""></td>
+			<td class="fixed"></td>
+			<td><input type="text" size="" name="3d" value=""></td>
+		</tr>
+		<tr>
+			<td>Angular Frequency-Calculated</td>
+			<td>rad/s</td>
+			<td><input type="text" size="" name="4a" value=""></td>
+			<td><input type="text" size="" name="4b" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Amplitude-Chosen</td>
+			<td>m</td>
+			<td><input type="text" size="" name="5a" value=""></td>
+			<td><input type="text" size="" name="5b" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Maximum Velocity-Calculated</td>
+			<td>m/s</td>
+			<td><input type="text" size="" name="6a" value=""></td>
+			<td><input type="text" size="" name="6b" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Maximum Acceleration-Calculated</td>
+			<td>m/s<sup>2</sup></td>
+			<td><input type="text" size="" name="7a" value=""></td>
+			<td><input type="text" size="" name="7b" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Period-Measured</td>
+			<td>s</td>
+			<td><input type="text" size="" name="8a" value=""></td>
+			<td><input type="text" size="" name="8b" value=""></td>
+			<td><input type="text" size="" name="8c" value=""></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Length-Measured</td>
+			<td>m</td>
+			<td><input type="text" size="" name="9a" value=""></td>
+			<td><input type="text" size="" name="9b" value=""></td>
+			<td><input type="text" size="" name="9c" value=""></td>
+			<td class="fixed"></td>
+		</tr>
+		<tr>
+			<td>Period after two minutes-Measured</td>
+			<td>s</td>
+			<td><input type="text" size="" name="10a" value=""></td>
+			<td><input type="text" size="" name="10b" value=""></td>
+			<td class="fixed"></td>
+			<td class="fixed"></td>
+		</tr>
+	</table>
+<p>
+First Name:<input type="text" name="studentFirstName"><br>
+Last Name:<input type="text" name="studentLastName"><br>
+Period:<input type="text" name="period">
+</p>
+
+<input type="hidden" name="11a" value="">
+<input type="hidden" name="11b" value="">
+
+<input type="submit" name="submit" value="Submit">
+</form>
+
+<p id="right">Created by: Steven Madachy</p>
+<p id="right">Version 2.1 Last Updated 1/24/2019 by AKH</p>
+
+</body>
+
+</html>
